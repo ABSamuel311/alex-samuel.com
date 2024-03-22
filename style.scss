@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Rubik+Dirt&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // border: 1px solid red;
+}
+
+body {
+    background-color: black;
+    font-family: "Roboto Flex", sans-serif;
+
+    a {
+        text-decoration: none;
+        color: white;
+
+        :visited {
+            color: white;
+        }
+    }
+
+    h2 {
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@mixin align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-container {
+    height: 100svh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+
+    .parallax-group {
+        position: relative;
+        height: 100svh;
+        transform-style: preserve-3d;
+
+        .parallax-layer {
+            position: absolute;
+            inset: 0;
+            @include align-center;
+        }
+
+        .base-layer {
+            transform: translateZ(-300px) scale(2);
+        }
+
+    }
+
+    #hero {
+        height: 100svh;
+
+        header {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            height: 15%;
+            width: 100%;
+
+            #logo {
+                height: 15vh;
+                padding: 1rem;
+            }
+
+            ul {
+                list-style: none;
+                padding-right: 2rem;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .heading {
+            color: white;
+            font-size: 3rem;
+            display: flex;
+            flex-direction: column;
+
+            h1,
+            span {
+                text-align: center;
+                text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            }
+
+            span {
+                width: 100%;
+                font-size: 2rem;
+            }
+        }
+
+        #heroimg {
+            -o-object-fit: cover;
+            object-fit: cover;
+            width: 100vw;
+        }
+    }
+
+    .images {
+        height: 100svh;
+        overflow: hidden;
+
+        img {
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+        .mid-layer {
+            display: flex;
+            justify-content: left;
+            padding: 2.5rem;
+            color: white;
+            font-size: 2rem;
+            letter-spacing: 3px;
+        }
+
+        #action-shot-collage {
+            width: 110vw;
+        }
+
+        #peggys-cove {
+            width: 100vw;
+        }
+
+        #seagull-seaport {
+            transform: translateY(-100px);
+            width: 100vw;
+        }
+
+        #mina-headshot {
+            width: 120vw;
+        }
+
+        #memories {
+            width: 100vw;
+        }
+
+    }
+
+    #footer {
+        height: 100svh;
+        background-color: teal;
+        @include align-center;
+
+        #footerimg {
+            width: 105vw;
+        }
+
+        a {
+            color: white;
+            padding: 1rem;
+            text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            :visited {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}

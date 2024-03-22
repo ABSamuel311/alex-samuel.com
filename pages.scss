@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Rubik+Dirt&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // border: 1px solid red;
+}
+
+body {
+    background-color: black;
+    font-family: "Roboto Flex", sans-serif;
+
+    a {
+        text-decoration: none;
+        color: white;
+
+        :visited {
+            color: white;
+        }
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        height: 15vh;
+
+        #logo {
+            height: 15vh;
+            padding: 1rem;
+        }
+
+
+        ul {
+            list-style: none;
+            padding-right: 2rem;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 1.5rem;
+            border-radius: 8px;
+
+            .selected {
+                border: 1px solid white;
+                border-radius: 6px;
+            }
+
+            li {
+                font-size: 1.25rem;
+                padding: 1rem 3rem;
+
+                a {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+
+        .img-grid-section {
+            width: 95%;
+            display: grid;
+            align-items: center;
+            background-color: white;
+            grid-template-columns: 1fr 1fr;
+
+            gap: 0px;
+            height: 100%;
+        }
+
+        .item {
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+
+}
