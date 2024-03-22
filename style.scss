@@ -108,6 +108,10 @@ body {
             -o-object-fit: cover;
             object-fit: cover;
             width: 100vw;
+
+            @media (max-width: 600px) {
+                width: 200vw;
+            }
         }
     }
 
@@ -131,23 +135,43 @@ body {
 
         #action-shot-collage {
             width: 110vw;
+
+            @media (max-width: 600px) {
+                width: 400vw;
+            }
         }
 
         #peggys-cove {
             width: 100vw;
+
+            @media (max-width: 600px) {
+                width: 200vw;
+            }
         }
 
         #seagull-seaport {
             transform: translateY(-100px);
             width: 100vw;
+
+            @media (max-width: 600px) {
+                width: 400vw;
+            }
         }
 
         #mina-headshot {
             width: 120vw;
+
+            @media (max-width: 600px) {
+                width: 400vw;
+            }
         }
 
         #memories {
             width: 100vw;
+
+            @media (max-width: 600px) {
+                width: 200vw;
+            }
         }
 
     }
@@ -159,6 +183,10 @@ body {
 
         #footerimg {
             width: 105vw;
+
+            @media (max-width: 600px) {
+                width: 200vw;
+            }
         }
 
         a {

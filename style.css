@@ -87,6 +87,11 @@ body h2 {
   object-fit: cover;
   width: 100vw;
 }
+@media (max-width: 600px) {
+  .parallax-container #hero #heroimg {
+    width: 200vw;
+  }
+}
 .parallax-container .images {
   height: 100svh;
   overflow: hidden;
@@ -106,18 +111,43 @@ body h2 {
 .parallax-container .images #action-shot-collage {
   width: 110vw;
 }
+@media (max-width: 600px) {
+  .parallax-container .images #action-shot-collage {
+    width: 400vw;
+  }
+}
 .parallax-container .images #peggys-cove {
   width: 100vw;
+}
+@media (max-width: 600px) {
+  .parallax-container .images #peggys-cove {
+    width: 200vw;
+  }
 }
 .parallax-container .images #seagull-seaport {
   transform: translateY(-100px);
   width: 100vw;
 }
+@media (max-width: 600px) {
+  .parallax-container .images #seagull-seaport {
+    width: 400vw;
+  }
+}
 .parallax-container .images #mina-headshot {
   width: 120vw;
 }
+@media (max-width: 600px) {
+  .parallax-container .images #mina-headshot {
+    width: 400vw;
+  }
+}
 .parallax-container .images #memories {
   width: 100vw;
+}
+@media (max-width: 600px) {
+  .parallax-container .images #memories {
+    width: 200vw;
+  }
 }
 .parallax-container #footer {
   height: 100svh;
@@ -128,6 +158,11 @@ body h2 {
 }
 .parallax-container #footer #footerimg {
   width: 105vw;
+}
+@media (max-width: 600px) {
+  .parallax-container #footer #footerimg {
+    width: 200vw;
+  }
 }
 .parallax-container #footer a {
   color: white;
