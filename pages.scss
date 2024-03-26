@@ -51,7 +51,12 @@ body {
             padding: 0px 10px;
             width: 100%; // Set width to 100% to ensure it spans the full width
             display: flex;
-            justify-content: flex-start; // Adjust alignment as needed
+            justify-content: center; // Adjust alignment as needed
+
+            @media (max-width: 875px) {
+                justify-content: flex-start;
+            }
+
             list-style: none;
             margin-top: 1.5rem;
             border-radius: 8px;
