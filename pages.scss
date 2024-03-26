@@ -86,7 +86,7 @@ body {
         display: flex;
         justify-content: center;
         margin-top: 1rem;
-        width: 100vw;
+        width: 100%;
 
         .img-grid-section {
             width: 95%;
@@ -108,6 +108,24 @@ body {
     @media (max-width: 720px) {
         .container .img-grid-section {
             grid-template-columns: 1fr; // Stack items in one column on smaller screens
+        }
+    }
+
+    footer {
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 2rem;
+
+            :visited {
+                text-decoration: none;
+                color: white;
+            }
         }
     }
 }

@@ -71,7 +71,7 @@ body .container {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
-  width: 100vw;
+  width: 100%;
 }
 body .container .img-grid-section {
   width: 95%;
@@ -89,4 +89,19 @@ body .container .item img {
   body .container .img-grid-section {
     grid-template-columns: 1fr;
   }
+}
+body footer {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body footer a {
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+}
+body footer a :visited {
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=pages.css.map */
