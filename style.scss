@@ -118,6 +118,10 @@ body {
         height: 100svh;
         overflow: hidden;
 
+        @media (max-width: 700px) {
+            height: 65svh;
+        }
+
         img {
             -o-object-fit: cover;
             object-fit: cover;

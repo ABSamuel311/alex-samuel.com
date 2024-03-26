@@ -92,6 +92,11 @@ body h2 {
   height: 100svh;
   overflow: hidden;
 }
+@media (max-width: 700px) {
+  .parallax-container .images {
+    height: 65svh;
+  }
+}
 .parallax-container .images img {
   -o-object-fit: cover;
   object-fit: cover;
