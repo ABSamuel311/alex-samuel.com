@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Allerta&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Rubik+Dirt&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // border: 1px solid red;
 }
 
 body {
@@ -16,7 +14,7 @@ body {
         text-decoration: none;
         color: white;
 
-        :visited {
+        &:visited {
             color: white;
         }
     }
@@ -32,7 +30,6 @@ body {
             height: 15vh;
             padding: 1rem;
         }
-
 
         ul {
             list-style: none;
@@ -51,15 +48,20 @@ body {
         justify-content: center;
 
         ul {
+            padding: 0px 10px;
+            width: 100%; // Set width to 100% to ensure it spans the full width
             display: flex;
-            justify-content: center;
+            justify-content: flex-start; // Adjust alignment as needed
             list-style: none;
             margin-top: 1.5rem;
             border-radius: 8px;
+            overflow-x: auto; // Move overflow property here
+            flex-wrap: nowrap; // Ensure items are in a single row
 
             .selected {
-                border: 1px solid white;
-                border-radius: 6px;
+                -webkit-text-decoration: underline 2px white;
+                text-decoration: underline 2px white;
+                // border: 1px solid white;// border-radius: 6px;
             }
 
             li {
@@ -73,10 +75,13 @@ body {
         }
     }
 
+
+
     .container {
         display: flex;
         justify-content: center;
         margin-top: 1rem;
+        width: 100vw;
 
         .img-grid-section {
             width: 95%;
@@ -84,18 +89,20 @@ body {
             align-items: center;
             background-color: white;
             grid-template-columns: 1fr 1fr;
-
             gap: 0px;
             height: 100%;
         }
 
         .item {
-
             img {
                 width: 100%;
             }
         }
     }
 
-
+    @media (max-width: 720px) {
+        .container .img-grid-section {
+            grid-template-columns: 1fr; // Stack items in one column on smaller screens
+        }
+    }
 }

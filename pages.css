@@ -13,7 +13,7 @@ body a {
   text-decoration: none;
   color: white;
 }
-body a :visited {
+body a:visited {
   color: white;
 }
 body header {
@@ -41,15 +41,19 @@ body .navbar {
   justify-content: center;
 }
 body .navbar ul {
+  padding: 0px 10px;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   list-style: none;
   margin-top: 1.5rem;
   border-radius: 8px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
 }
 body .navbar ul .selected {
-  border: 1px solid white;
-  border-radius: 6px;
+  -webkit-text-decoration: underline 2px white;
+  text-decoration: underline 2px white;
 }
 body .navbar ul li {
   font-size: 1.25rem;
@@ -62,6 +66,7 @@ body .container {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+  width: 100vw;
 }
 body .container .img-grid-section {
   width: 95%;
@@ -74,4 +79,9 @@ body .container .img-grid-section {
 }
 body .container .item img {
   width: 100%;
+}
+@media (max-width: 720px) {
+  body .container .img-grid-section {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=pages.css.map */

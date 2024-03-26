@@ -83,14 +83,10 @@ body h2 {
   font-size: 2rem;
 }
 .parallax-container #hero #heroimg {
+  min-width: 100vw;
+  height: 100vh;
   -o-object-fit: cover;
   object-fit: cover;
-  width: 100vw;
-}
-@media (max-width: 600px) {
-  .parallax-container #hero #heroimg {
-    width: 200vw;
-  }
 }
 .parallax-container .images {
   height: 100svh;
@@ -109,45 +105,24 @@ body h2 {
   letter-spacing: 3px;
 }
 .parallax-container .images #action-shot-collage {
-  width: 110vw;
-}
-@media (max-width: 600px) {
-  .parallax-container .images #action-shot-collage {
-    width: 400vw;
-  }
+  min-width: 100vw;
+  height: 100vh;
 }
 .parallax-container .images #peggys-cove {
-  width: 100vw;
-}
-@media (max-width: 600px) {
-  .parallax-container .images #peggys-cove {
-    width: 200vw;
-  }
+  min-width: 100vw;
+  height: 100vh;
 }
 .parallax-container .images #seagull-seaport {
-  transform: translateY(-100px);
-  width: 100vw;
-}
-@media (max-width: 600px) {
-  .parallax-container .images #seagull-seaport {
-    width: 400vw;
-  }
+  min-width: 100vw;
+  height: 100vh;
 }
 .parallax-container .images #mina-headshot {
-  width: 120vw;
-}
-@media (max-width: 600px) {
-  .parallax-container .images #mina-headshot {
-    width: 400vw;
-  }
+  min-width: 100vw;
+  height: 100vh;
 }
 .parallax-container .images #memories {
-  width: 100vw;
-}
-@media (max-width: 600px) {
-  .parallax-container .images #memories {
-    width: 200vw;
-  }
+  min-width: 100vw;
+  height: 100vh;
 }
 .parallax-container #footer {
   height: 100svh;
@@ -157,12 +132,10 @@ body h2 {
   align-items: center;
 }
 .parallax-container #footer #footerimg {
-  width: 105vw;
-}
-@media (max-width: 600px) {
-  .parallax-container #footer #footerimg {
-    width: 200vw;
-  }
+  -o-object-fit: cover;
+  object-fit: cover;
+  min-width: 110vw;
+  height: 110vh;
 }
 .parallax-container #footer a {
   color: white;

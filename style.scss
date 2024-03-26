@@ -105,13 +105,12 @@ body {
         }
 
         #heroimg {
+            min-width: 100vw;
+            height: 100vh;
             -o-object-fit: cover;
             object-fit: cover;
-            width: 100vw;
 
-            @media (max-width: 600px) {
-                width: 200vw;
-            }
+
         }
     }
 
@@ -134,44 +133,28 @@ body {
         }
 
         #action-shot-collage {
-            width: 110vw;
-
-            @media (max-width: 600px) {
-                width: 400vw;
-            }
+            min-width: 100vw;
+            height: 100vh;
         }
 
         #peggys-cove {
-            width: 100vw;
-
-            @media (max-width: 600px) {
-                width: 200vw;
-            }
+            min-width: 100vw;
+            height: 100vh;
         }
 
         #seagull-seaport {
-            transform: translateY(-100px);
-            width: 100vw;
-
-            @media (max-width: 600px) {
-                width: 400vw;
-            }
+            min-width: 100vw;
+            height: 100vh;
         }
 
         #mina-headshot {
-            width: 120vw;
-
-            @media (max-width: 600px) {
-                width: 400vw;
-            }
+            min-width: 100vw;
+            height: 100vh;
         }
 
         #memories {
-            width: 100vw;
-
-            @media (max-width: 600px) {
-                width: 200vw;
-            }
+            min-width: 100vw;
+            height: 100vh;
         }
 
     }
@@ -182,11 +165,10 @@ body {
         @include align-center;
 
         #footerimg {
-            width: 105vw;
-
-            @media (max-width: 600px) {
-                width: 200vw;
-            }
+            -o-object-fit: cover;
+            object-fit: cover;
+            min-width: 110vw;
+            height: 110vh;
         }
 
         a {
