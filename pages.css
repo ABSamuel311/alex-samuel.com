@@ -104,4 +104,7 @@ body footer a {
 body footer a :visited {
   text-decoration: none;
   color: white;
+}
+body .selected {
+  text-decoration: underline;
 }/*# sourceMappingURL=pages.css.map */
