@@ -182,3 +182,15 @@ body {
         }
     }
 }
+
+@media (max-width: 720px) {
+    .hide-on-small {
+        display: none;
+    }
+}
+
+@media (min-width: 720px) {
+    .hide-on-large {
+        display: none;
+    }
+}

@@ -144,4 +144,15 @@ body h2 {
 .parallax-container #footer a :visited {
   text-decoration: none;
   color: white;
+}
+
+@media (max-width: 720px) {
+  .hide-on-small {
+    display: none;
+  }
+}
+@media (min-width: 720px) {
+  .hide-on-large {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
