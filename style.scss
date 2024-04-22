@@ -104,13 +104,12 @@ body {
             }
         }
 
-        #heroimg {
+        #heroimg,
+        #heroimgvert {
             min-width: 100vw;
             height: 100vh;
             -o-object-fit: cover;
             object-fit: cover;
-
-
         }
     }
 
@@ -142,7 +141,7 @@ body {
             height: 100vh;
         }
 
-        #seagull-seaport {
+        #events {
             min-width: 100vw;
             height: 100vh;
         }
@@ -155,6 +154,17 @@ body {
         #memories {
             min-width: 100vw;
             height: 100vh;
+        }
+
+        #peggyscovevert,
+        #eventsvert,
+        #sportsvert,
+        #portraitvert,
+        #footervert {
+            min-width: 100vw;
+            height: 100vh;
+            -o-object-fit: cover;
+            object-fit: cover;
         }
 
     }

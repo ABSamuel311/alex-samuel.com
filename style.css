@@ -82,7 +82,8 @@ body h2 {
   width: 100%;
   font-size: 2rem;
 }
-.parallax-container #hero #heroimg {
+.parallax-container #hero #heroimg,
+.parallax-container #hero #heroimgvert {
   min-width: 100vw;
   height: 100vh;
   -o-object-fit: cover;
@@ -112,7 +113,7 @@ body h2 {
   min-width: 100vw;
   height: 100vh;
 }
-.parallax-container .images #seagull-seaport {
+.parallax-container .images #events {
   min-width: 100vw;
   height: 100vh;
 }
@@ -123,6 +124,16 @@ body h2 {
 .parallax-container .images #memories {
   min-width: 100vw;
   height: 100vh;
+}
+.parallax-container .images #peggyscovevert,
+.parallax-container .images #eventsvert,
+.parallax-container .images #sportsvert,
+.parallax-container .images #portraitvert,
+.parallax-container .images #footervert {
+  min-width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .parallax-container #footer {
   height: 100svh;
